@@ -68,11 +68,11 @@ const App = () => {
         <Experience theme={theme} />
         <Contact theme={theme} avatar={homeData.avatar} name={homeData.name} />
       </main>
-      {/* <Footer
-        githubUrl={homeData.githubUrl}
-        link={homeData.link}
-        twitter={homeData.twitter}
-      /> */}
+      <Footer
+        // githubUrl={homeData.githubUrl}
+        // link={homeData.link}
+        // twitter={homeData.twitter}
+      />
     </>
   );
 };
