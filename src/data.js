@@ -4,12 +4,10 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaSass,
   FaGitAlt,
   FaNode,
-  FaJava,
 } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { SiAngular, SiGithubactions, SiTypescript } from "react-icons/si";
 
 // Projects Images (add your images to the /assets/images directory and import below)
 import colors from "./assets/images/colors.svg";
@@ -26,13 +24,13 @@ export const githubUsername = "smankow";
 export const skillData = [
   {
     id: 1,
-    skill: <FaHtml5 className="display-4" />,
-    name: "HTML5",
+    skill: <FaReact className="display-4" />,
+    name: "React",
   },
   {
     id: 2,
-    skill: <FaCss3Alt className="display-4" />,
-    name: "CSS3",
+    skill: <SiTypescript className="display-4" />,
+    name: "TypeScript",
   },
   {
     id: 3,
@@ -41,33 +39,33 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <FaReact className="display-4" />,
-    name: "React",
+    skill: <FaHtml5 className="display-4" />,
+    name: "HTML5",
   },
   {
     id: 5,
-    skill: <FaSass className="display-4" />,
-    name: "Sass",
+    skill: <FaCss3Alt className="display-4" />,
+    name: "CSS3 / SCSS",
   },
   {
     id: 6,
-    skill: <SiTypescript className="display-4" />,
-    name: "TypeScript",
+    skill: <SiAngular className="display-4" />,
+    name: "Angular",
   },
   {
     id: 7,
-    skill: <FaGitAlt className="display-4" />,
-    name: "Git",
-  },
-  {
-    id: 8,
     skill: <FaNode className="display-4" />,
     name: "Node.js",
   },
   {
+    id: 8,
+    skill: <FaGitAlt className="display-4" />,
+    name: "Git",
+  },
+  {
     id: 9,
-    skill: <FaJava className="display-4" />,
-    name: "Java",
+    skill: <SiGithubactions className="display-4" />,
+    name: "GitHub Actions",
   },
 ];
 
@@ -99,7 +97,7 @@ export const projectData = [
 // Share the contact info you are comfortable with (no dashes for phone numbers)
 // If no info provided a button with a link to mailchimp will be rendered, update the link if you want to use this option
 export const contactInfo = {
-  email: "sam.mankowski.76@gmail.com",
-  phone: "(860)-325-4450",
+  email: "mankowskisam@gmail.com",
+  phone: "(860)-356-6000",
   // mailChimp: "https://www.mailchimp.com/",
 };

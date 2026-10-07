@@ -3,19 +3,12 @@ import { Link } from "react-scroll";
 // https://react-icons.github.io/react-icons/
 import { FaChevronCircleDown } from "react-icons/fa";
 import NavBar from "../containers/NavBar";
-import SocialLinks from "./SocialLinks";
 
 // Image
 import logo from "../images/logo.svg";
 
-const About = ({ theme, setTheme, githubUrl, name, link, bio, twitter }) => {
+const About = ({ theme, setTheme, name }) => {
   const newTheme = `${theme} d-flex flex-column min-vh-100 justify-content-center`;
-
-  const socialData = {
-    githubUrl: githubUrl,
-    link: link,
-    twitter: twitter,
-  };
 
   return (
     <header id="about" className={newTheme}>
@@ -31,7 +24,16 @@ const About = ({ theme, setTheme, githubUrl, name, link, bio, twitter }) => {
         <h1>{name}</h1>
         <hr />
         {/* <p>{bio}</p> */}
-        <p>Front end React developer with almost 4 years experience in designing and developing web applications. Proficient in HTML, CSS, Javascript, and React. Experienced in Agile Scrum SDLC. Excellent communicator, adaptive fast learner, and passionate worker with a strong ability to handle difficult tasks.</p>
+        <p>
+          Senior software engineer with 7 years of experience building responsive,
+          accessible web applications using React, TypeScript, and modern web
+          development technologies. Experienced in creating reusable web
+          components, BFF layers, and CI/CD workflows with Harness and GitHub
+          Actions. Strong background in accessibility testing, end-to-end
+          automation with Cypress, and AI-assisted development using GitHub
+          Copilot and Claude.
+        </p>
+        <p className="mt-3 mb-0">Windsor, CT</p>
         {/* <SocialLinks {...socialData} /> */}
         <Link className="scroll" to="education" smooth={true} duration={750}>
           <FaChevronCircleDown id="scroll-down" />

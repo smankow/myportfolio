@@ -13,12 +13,12 @@ const Education = ({ theme }) => {
         <hr />
         <div className="education-container">
           <h3>University of Hartford</h3>
-          <h5>Bachelor of Science in Computer Science</h5>
-          <h5>September 2015 - May 2019</h5>
+          <h5>West Hartford, CT</h5>
+          <h5>Bachelor of Science: Computer Science</h5>
+          <h5>May 2019</h5>
           <ul>
-              <li>3.4 GPA</li>
-              <li>Minor in Math</li>
-              <li>One of only 27 students in the College of Arts & Sciences to achieve Bachelor of Science in 2019</li>
+            <li>Minored in Math</li>
+            <li>3.4 GPA</li>
           </ul>
         </div>
       </div>
