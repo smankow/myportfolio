@@ -1,69 +1,28 @@
-// https://react-icons.github.io/react-icons/
-import { FaGithub, FaLink, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLink, FaLinkedin } from "react-icons/fa";
 
-const SocialLinks = ({ githubUrl, link, twitter }) => {
-  const twitterLink = `https://twitter.com/${twitter}`;
-
-  if (link === "" && twitter === null) {
-    return (
-      <>
-        <div className="social-links">
-          <a href={githubUrl} target="_blank" rel="noreferrer">
-            <FaGithub />
-          </a>
-        </div>
-      </>
-    );
-  }
-
-  if (link !== "" && twitter === null) {
-    return (
-      <>
-        <div className="social-links">
-          <a className="mr-5" href={githubUrl} target="_blank" rel="noreferrer">
-            <FaGithub />
-          </a>
-
-          <a href={link} target="_blank" rel="noreferrer">
-            <FaLink />
-          </a>
-        </div>
-      </>
-    );
-  }
-
-  if (link === "" && twitter !== null) {
-    return (
-      <>
-        <div className="social-links">
-          <a className="mr-5" href={githubUrl} target="_blank" rel="noreferrer">
-            <FaGithub />
-          </a>
-
-          <a href={twitterLink} target="_blank" rel="noreferrer">
-            <FaTwitter />
-          </a>
-        </div>
-      </>
-    );
-  }
+const SocialLinks = ({ githubUrl, portfolioUrl, linkedinUrl }) => {
+  const links = [
+    { url: githubUrl, label: "GitHub", icon: <FaGithub /> },
+    { url: portfolioUrl, label: "Portfolio", icon: <FaLink /> },
+    { url: linkedinUrl, label: "LinkedIn", icon: <FaLinkedin /> },
+  ].filter(({ url }) => url);
 
   return (
-    <>
-      <div className="social-links">
-        <a href={githubUrl} target="_blank" rel="noreferrer">
-          <FaGithub />
+    <div className="social-links">
+      {links.map(({ url, label, icon }) => (
+        <a
+          className="mx-3"
+          href={url}
+          key={label}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={label}
+          title={label}
+        >
+          {icon}
         </a>
-
-        <a className="mx-5" href={link} target="_blank" rel="noreferrer">
-          <FaLink />
-        </a>
-
-        <a href={twitterLink} target="_blank" rel="noreferrer">
-          <FaTwitter />
-        </a>
-      </div>
-    </>
+      ))}
+    </div>
   );
 };
 

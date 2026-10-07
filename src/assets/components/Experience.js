@@ -16,12 +16,13 @@ const Experience = ({ theme }) => {
                     name: "Pharmacy Portal",
                     bullets: [
                         "Migrated and rebuilt legacy pharmacy portal pages from .NET to React and Angular repositories while maintaining all functionality.",
-                        "Utilized prompt engineering to drive LLMs to deliver unit tests with at least 80% code coverage, improve code efficiency, and detect vulnerabilities.",
-                        "Built and utilized scalable, reusable web components to match UI specifications across the portal.",
-                        "Added form field validation to catch user errors before requests were sent, reducing backend load.",
+                        "Utilized prompt engineering with LLMs to deliver unit tests with at least 80% code coverage, increase code efficiency, and detect vulnerabilities.",
+                        "Built and utilized scalable, reusable web component libraries based on UI/UX design specifications.",
+                        "Reduced backend load by validating form fields before requests were made.",
                         "Performed regression, accessibility, and end-to-end testing throughout feature development to preserve functionality.",
-                        "Used a BFF layer to efficiently manage data responses across roles and authorizations and implemented pagination to limit response payloads.",
+                        "Used a BFF layer to manage data responses across roles and authorizations and implemented pagination to reduce response payloads.",
                         "Contributed to CI/CD workflows with GitHub Actions for build, test, and deployment.",
+                        "Reviewed pull requests and provided feedback on code quality, maintainability, accessibility, testing, and project standards.",
                     ],
                 },
                 {

@@ -3,11 +3,13 @@ import { Link } from "react-scroll";
 // https://react-icons.github.io/react-icons/
 import { FaChevronCircleDown } from "react-icons/fa";
 import NavBar from "../containers/NavBar";
+import SocialLinks from "./SocialLinks";
+import { profileLinks } from "../../data";
 
 // Image
 import logo from "../images/logo.svg";
 
-const About = ({ theme, setTheme, name }) => {
+const About = ({ theme, setTheme, githubUrl, name }) => {
   const newTheme = `${theme} d-flex flex-column min-vh-100 justify-content-center`;
 
   return (
@@ -28,13 +30,17 @@ const About = ({ theme, setTheme, name }) => {
           Senior software engineer with 7 years of experience building responsive,
           accessible web applications using React, TypeScript, and modern web
           development technologies. Experienced in creating reusable web
-          components, BFF layers, and CI/CD workflows with Harness and GitHub
-          Actions. Strong background in accessibility testing, end-to-end
-          automation with Cypress, and AI-assisted development using GitHub
-          Copilot and Claude.
+          components, BFF layers, CI/CD workflows, and reviewing code for
+          quality and maintainability. Strong background in accessibility
+          testing, end-to-end automation with Cypress, and AI-assisted
+          development using GitHub Copilot and Claude.
         </p>
         <p className="mt-3 mb-0">Windsor, CT</p>
-        {/* <SocialLinks {...socialData} /> */}
+        <SocialLinks
+          githubUrl={githubUrl}
+          portfolioUrl={profileLinks.portfolio}
+          linkedinUrl={profileLinks.linkedin}
+        />
         <Link className="scroll" to="education" smooth={true} duration={750}>
           <FaChevronCircleDown id="scroll-down" />
         </Link>

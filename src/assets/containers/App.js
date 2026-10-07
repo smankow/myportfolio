@@ -33,7 +33,7 @@ const App = () => {
       })
       .then((data) => {
         setData(data);
-        document.title = data.name;
+        document.title = `${data.name} | Senior Software Engineer`;
         // Comment out setIsLoading below to test Loading screen with a valid username (may require reloading the page)
         setIsLoading(false);
       })

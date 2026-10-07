@@ -1,17 +1,8 @@
 const Footer = () => {
   return (
     <footer className="d-flex flex-column justify-content-center align-items-center bg-dark">
-      {/* <SocialLinks githubUrl={githubUrl} link={link} twitter={twitter} /> */}
-      <p className="lead my-3 text-white"><br/><br/>
-        {/* &copy; Made with <span>♥️</span> by{" "}
-        <a
-          id="myInfo"
-          href="https://github.com/mshuber1981/github-react-portfolio-template"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Michael Huber
-        </a> */}
+      <p className="lead my-3 text-white mb-0">
+        &copy; {new Date().getFullYear()} Sam Mankowski
       </p>
     </footer>
   );

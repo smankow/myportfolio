@@ -6,6 +6,11 @@ import {
   FaReact,
   FaGitAlt,
   FaNode,
+  FaAccessibleIcon,
+  FaClipboardCheck,
+  FaCode,
+  FaRobot,
+  FaVial,
 } from "react-icons/fa";
 import { SiAngular, SiGithubactions, SiTypescript } from "react-icons/si";
 
@@ -17,6 +22,11 @@ import notepad from "./assets/images/notepad.svg";
 /* START HERE - add your GitHub username below
  ************************************************************** */
 export const githubUsername = "smankow";
+
+export const profileLinks = {
+  portfolio: "https://smankow.github.io/myportfolio/",
+  linkedin: "https://www.linkedin.com/in/samuel-mankowski-6102a21a0/",
+};
 
 /* Skills
  ************************************************************** */
@@ -54,18 +64,43 @@ export const skillData = [
   },
   {
     id: 7,
+    skill: <FaCode className="display-4" />,
+    name: "Web Components / Stencil",
+  },
+  {
+    id: 8,
+    skill: <FaVial className="display-4" />,
+    name: "Cypress",
+  },
+  {
+    id: 9,
+    skill: <FaClipboardCheck className="display-4" />,
+    name: "Jest / React Testing Library",
+  },
+  {
+    id: 10,
+    skill: <FaAccessibleIcon className="display-4" />,
+    name: "Accessibility",
+  },
+  {
+    id: 11,
+    skill: <SiGithubactions className="display-4" />,
+    name: "GitHub Actions",
+  },
+  {
+    id: 12,
+    skill: <FaRobot className="display-4" />,
+    name: "AI-assisted development",
+  },
+  {
+    id: 13,
     skill: <FaNode className="display-4" />,
     name: "Node.js",
   },
   {
-    id: 8,
+    id: 14,
     skill: <FaGitAlt className="display-4" />,
     name: "Git",
-  },
-  {
-    id: 9,
-    skill: <SiGithubactions className="display-4" />,
-    name: "GitHub Actions",
   },
 ];
 
